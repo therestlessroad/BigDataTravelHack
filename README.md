@@ -13,7 +13,7 @@ Price vs. Number of days in advance. Find perfect time to purchase tickets when 
  - Num of stop
 
  *Output:*
- - # weeks in advance
+ - Num weeks in advance
  - source
  - dest
  - Num stops
