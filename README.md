@@ -9,14 +9,14 @@ Price vs. Number of days in advance. Find perfect time to purchase tickets when 
  - Destination
  - Start date
  - End date
- - # of days FROM Oct 17 (range of weeks)
- - # of stop
+ - Num of days FROM Oct 17 (range of weeks)
+ - Num of stop
 
  *Output:*
  - # weeks in advance
  - source
  - dest
- - # stops
+ - Num stops
  - avg price
  - cabin (focus on coach)
 
