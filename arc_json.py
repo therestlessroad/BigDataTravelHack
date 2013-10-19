@@ -6,7 +6,7 @@ import os
 
 
 
-#fileIn = open('tnz_airlines', 'r')
+#fileIn = open('head.test', 'r')
 
 fileIn = open(sys.argv[1], 'r')
 
@@ -25,13 +25,13 @@ for property in reader:
 
 #print out[0]
 #pp.pprint(out)
-i = 0
+i = int(sys.argv[2])
 for d in out:
 	json_data = str(d)
 	json_data = json_data.replace("'", '"')
-	curlCommand = "curl -XPOST http://cluster-7-slave-01.sl.hackreduce.net:9200/flight_airlines/flight-mapping/" + str(i) + " -d '" + json_data + "'"
-	print curlCommand
+	curlCommand = "curl -XPOST http://cluster-7-slave-01.sl.hackreduce.net:9200/arc/arc-mapping/" + str(i) + " -d '" + json_data + "'"
+	#print curlCommand
 	i += 1
-	#result = os.system(curlCommand)
-	#print result
+	result = os.system(curlCommand)
+	print result
 	
